@@ -167,3 +167,4 @@ cython_debug/
 /.idea/modules.xml
 /.idea/pytente_nautica.iml
 /.idea/vcs.xml
+/entro_favorites.json

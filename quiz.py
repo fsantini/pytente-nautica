@@ -5,7 +5,8 @@ from random import random
 import numpy as np
 from PyQt5.QtCore import pyqtSlot
 
-from PyQt5.QtWidgets import QApplication, QWidget, QLabel, QRadioButton, QPushButton, QVBoxLayout, QHBoxLayout, QGroupBox, QMenu, QAction, QMainWindow
+from PyQt5.QtWidgets import QApplication, QWidget, QLabel, QRadioButton, QPushButton, QVBoxLayout, QHBoxLayout, \
+    QGroupBox, QMenu, QAction, QMainWindow, QCheckBox
 from PyQt5.QtGui import QPixmap, QFont
 
 
@@ -40,6 +41,8 @@ class MainWindow(QMainWindow):
         self.vela_questions = None
         self.entro_weights = None
         self.vela_weights = None
+        self.entro_favorites = None
+        self.vela_favorites = None
         self.current_question_id = 0
         self.current_question_set = None
         self.current_weight_set = None
@@ -55,20 +58,33 @@ class MainWindow(QMainWindow):
         with open('questions_vela.json') as f:
             self.vela_questions = json.load(f)
 
-        if os.path.isfile('weights_entro.json'):
-            with open('weights_entro.json') as f:
+        if os.path.isfile('entro_weights.json'):
+            with open('entro_weights.json') as f:
                 self.entro_weights = json.load(f)
         else:
             self.entro_weights = [0.5] * len(self.entro_questions)
 
-        if os.path.isfile('weights_vela.json'):
-            with open('weights_vela.json') as f:
+        if os.path.isfile('vela_weights.json'):
+            with open('vela_weights.json') as f:
                 self.vela_weights = json.load(f)
         else:
             self.vela_weights = [0.5] * len(self.vela_questions)
 
+        if os.path.isfile('entro_favorites.json'):
+            with open('entro_favorites.json') as f:
+                self.entro_favorites = set(json.load(f))
+        else:
+            self.entro_favorites = set()
+
+        if os.path.isfile('vela_favorites.json'):
+            with open('vela_favorites.json') as f:
+                self.vela_favorites = set(json.load(f))
+        else:
+            self.vela_favorites = set()
+
         self.current_question_set = self.entro_questions
         self.current_weight_set = self.entro_weights
+        self.current_favorite_set = self.entro_favorites
         self.current_image_path = 'images_entro'
 
         if os.path.isfile('result_history.json'):
@@ -93,15 +109,37 @@ class MainWindow(QMainWindow):
         with open('vela_weights.json', 'w') as f:
             json.dump(self.vela_weights, f)
 
+    def save_favorites(self):
+        entro_favorite_list = [int(id) for id in self.entro_favorites]
+        vela_favorite_list = [int(id) for id in self.vela_favorites]
+
+        if self.entro_favorites:
+            with open('entro_favorites.json', 'w') as f:
+                json.dump(entro_favorite_list, f)
+
+        if self.vela_favorites:
+            with open('vela_favorites.json', 'w') as f:
+                json.dump(vela_favorite_list, f)
+
     def get_new_question(self):
         self.answer_being_shown = False
         for button in self.radio_button_list:
             button.setStyleSheet("")
         self.radio_button1.setChecked(True)
         self.ok_button.setText("Ok")
-        question_id = get_random_question_id(self.current_weight_set)
+        if self.favorite_action.isChecked():
+            favorite_list = list(self.current_favorite_set)
+            current_weight_set = [self.current_weight_set[i] for i in favorite_list]
+            favorite_question_id = get_random_question_id(current_weight_set)
+            question_id = favorite_list[favorite_question_id]
+        else:
+            question_id = get_random_question_id(self.current_weight_set)
         question = self.current_question_set[question_id]
         self.current_question_id = question_id
+        if question_id in self.current_favorite_set:
+            self.favorite_checkbox.setChecked(True)
+        else:
+            self.favorite_checkbox.setChecked(False)
         if not question['image']:
             self.image_panel.hide()
         else:
@@ -163,6 +201,11 @@ class MainWindow(QMainWindow):
         radio_layout.addWidget(self.radio_button3)
         main_layout.addWidget(self.radio_group)
 
+        # Create favorite checkbox
+        self.favorite_checkbox = QCheckBox("Preferita")
+        self.favorite_checkbox.toggled.connect(self.toggle_favorite)
+        main_layout.addWidget(self.favorite_checkbox)
+
         bottom_widget = QWidget()
         bottom_layout = QHBoxLayout()
         bottom_widget.setLayout(bottom_layout)
@@ -189,6 +232,23 @@ class MainWindow(QMainWindow):
         domande_menu.addAction(self.vela_action)
         self.entro_action.triggered.connect(self.change_questions_entro)
         self.vela_action.triggered.connect(self.change_questions_vela)
+        self.favorite_action = QAction("Solo preferite", self)
+        self.favorite_action.setCheckable(True)
+        self.favorite_action.setChecked(False)
+        domande_menu.addSeparator()
+        domande_menu.addAction(self.favorite_action)
+
+    @pyqtSlot()
+    def show_favorites(self):
+        pass
+
+    @pyqtSlot()
+    def toggle_favorite(self):
+        if self.favorite_checkbox.isChecked():
+            self.current_favorite_set.add(int(self.current_question_id))
+        else:
+            self.current_favorite_set.discard(int(self.current_question_id))
+        self.save_favorites()
 
     @pyqtSlot()
     def change_questions_vela(self):
@@ -196,6 +256,7 @@ class MainWindow(QMainWindow):
         self.vela_action.setChecked(True)
         self.current_question_set = self.vela_questions
         self.current_weight_set = self.vela_weights
+        self.current_favorite_set = self.vela_favorites
         self.current_image_path = 'images_vela'
         self.get_new_question()
 
@@ -205,6 +266,7 @@ class MainWindow(QMainWindow):
         self.vela_action.setChecked(False)
         self.current_question_set = self.entro_questions
         self.current_weight_set = self.entro_weights
+        self.current_favorite_set = self.entro_favorites
         self.current_image_path = 'images_entro'
         self.get_new_question()
 
