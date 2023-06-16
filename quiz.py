@@ -3,10 +3,10 @@ import os
 import sys
 from random import random
 import numpy as np
-from PyQt5.QtCore import pyqtSlot
+from PyQt5.QtCore import pyqtSlot, QEvent, Qt, QTimer
 
 from PyQt5.QtWidgets import QApplication, QWidget, QLabel, QRadioButton, QPushButton, QVBoxLayout, QHBoxLayout, \
-    QGroupBox, QMenu, QAction, QMainWindow, QCheckBox
+    QGroupBox, QMenu, QAction, QMainWindow, QCheckBox, QMessageBox, QSizePolicy, QButtonGroup
 from PyQt5.QtGui import QPixmap, QFont
 
 
@@ -33,6 +33,50 @@ def get_updated_weight(current_weight, correction):
     return sigmoid(logit(current_weight) + correction)
 
 
+class RadioButtonLabel(QWidget):
+    def __init__(self, text, button_group):
+        super().__init__()
+
+        # Create a vertical layout for the widget
+        layout = QHBoxLayout(self)
+        layout.setContentsMargins(0, 0, 0, 0)
+        self.setLayout(layout)
+
+        # Create the radio button
+        self.radio_button = QRadioButton()
+        self.radio_button.setSizePolicy(QSizePolicy.Fixed, QSizePolicy.Fixed)
+        button_group.addButton(self.radio_button)
+        layout.addWidget(self.radio_button)
+
+        # Create the label
+        self.label = QLabel(text)
+        self.label.setWordWrap(True)
+        self.label.setSizePolicy(QSizePolicy.Expanding, QSizePolicy.Expanding)
+        layout.addWidget(self.label)
+
+        # Adjust alignment
+        layout.setAlignment(self.radio_button, Qt.AlignVCenter)
+        layout.setAlignment(self.label, Qt.AlignVCenter)
+
+    def mousePressEvent(self, event):
+        if event.buttons() == Qt.LeftButton:  # Trigger only on left mouse button click
+            self.radio_button.click()  # Trigger the click event of the radio button
+
+        super().mousePressEvent(event)
+
+    def setText(self, text):
+        self.label.setText(text)
+
+    def isChecked(self):
+        return self.radio_button.isChecked()
+
+    def setChecked(self, checked):
+        self.radio_button.setChecked(checked)
+
+    def setStyleSheet(self, styleSheet: str) -> None:
+        self.label.setStyleSheet(styleSheet)
+
+
 class MainWindow(QMainWindow):
     def __init__(self):
         super().__init__()
@@ -49,7 +93,49 @@ class MainWindow(QMainWindow):
         self.current_image_path = 'images_entro'
         self.answer_being_shown = False
         self.result_history = []
+        self.completed_questions_vela = set()
+        self.completed_questions_entro = set()
+        self.current_completed_questions = self.completed_questions_entro
         self.load_questions()
+        self.debounce_timer = QTimer()
+        self.debounce_timer.setInterval(50)
+        self.debounce_timer.setSingleShot(True)
+        self.debounce_timer.timeout.connect(self.processDebouncedEvent)
+        self.key_pressed = None
+        QApplication.instance().installEventFilter(self)
+
+    def eventFilter(self, obj, event):
+        if event.type() == QEvent.KeyPress:
+            self.key_pressed = event.key()
+            self.debounce_timer.start()
+
+        return super().eventFilter(obj, event)
+
+    def processDebouncedEvent(self):
+        # Capture the debounced event
+        if self.key_pressed is None:
+            return
+
+        try:
+            ch = chr(self.key_pressed)
+        except:
+            print(self.key_pressed)
+            ch = ''
+
+        if self.key_pressed == Qt.Key_Enter or self.key_pressed == Qt.Key_Return:
+            ch = ' '
+        if ch == '1':
+            self.radio_button1.setChecked(True)
+        elif ch == '2':
+            self.radio_button2.setChecked(True)
+        elif ch == '3':
+            if self.radio_button3.isVisible():
+                self.radio_button3.setChecked(True)
+        elif ch == ' ':
+            print('space pressed')
+            self.ok_button.clicked.emit()
+
+        self.key_pressed = None
 
     def load_questions(self):
         with open('questions_entro.json') as f:
@@ -82,9 +168,18 @@ class MainWindow(QMainWindow):
         else:
             self.vela_favorites = set()
 
+        if os.path.isfile('vela_completed.json'):
+            with open('vela_completed.json') as f:
+                self.completed_questions_vela = set(json.load(f))
+
+        if os.path.isfile('entro_completed.json'):
+            with open('entro_completed.json') as f:
+                self.completed_questions_entro = set(json.load(f))
+
         self.current_question_set = self.entro_questions
         self.current_weight_set = self.entro_weights
         self.current_favorite_set = self.entro_favorites
+        self.current_completed_questions = self.completed_questions_entro
         self.current_image_path = 'images_entro'
 
         if os.path.isfile('result_history.json'):
@@ -95,12 +190,22 @@ class MainWindow(QMainWindow):
         self.get_new_question()
 
     def update_results(self):
-        if not self.result_history:
-            self.result_label.setText('0/0')
-        else:
-            self.result_label.setText(f'{sum(self.result_history)}/{len(self.result_history)}')
+        result_text = 'corrette 0/0'
+        if self.result_history:
+            result_text = f'corrette {sum(self.result_history)}/{len(self.result_history)}'
+
+        result_text += f' totali {len(self.current_completed_questions)}/{len(self.current_question_set)}'
+
+        self.result_label.setText(result_text)
+
         with open('result_history.json', 'w') as f:
             json.dump(self.result_history, f)
+
+        with open('vela_completed.json', 'w') as f:
+            json.dump(list(self.completed_questions_vela), f)
+
+        with open('entro_completed.json', 'w') as f:
+            json.dump(list(self.completed_questions_entro), f)
 
     def save_weights(self):
         with open('entro_weights.json', 'w') as f:
@@ -143,7 +248,9 @@ class MainWindow(QMainWindow):
         if not question['image']:
             self.image_panel.hide()
         else:
-            self.image_panel.setPixmap(QPixmap(os.path.join(self.current_image_path, question['image'])))
+            pixmap = QPixmap(os.path.join(self.current_image_path, question['image']))
+            pixmap = pixmap.scaled(self.image_panel.size(), aspectRatioMode=True)
+            self.image_panel.setPixmap(pixmap)
             self.image_panel.show()
         self.text_panel.setText(question['question'].replace('\n', ' '))
         self.radio_button1.setText(question['answers'][0].replace('\n', ' '))
@@ -191,9 +298,10 @@ class MainWindow(QMainWindow):
         self.radio_group = QGroupBox("Risposte")
         radio_layout = QVBoxLayout()
         self.radio_group.setLayout(radio_layout)
-        self.radio_button1 = QRadioButton("Option 1")
-        self.radio_button2 = QRadioButton("Option 2")
-        self.radio_button3 = QRadioButton("Option 3")
+        self.radio_button_group = QButtonGroup()
+        self.radio_button1 = RadioButtonLabel("Option 1", self.radio_button_group)
+        self.radio_button2 = RadioButtonLabel("Option 2", self.radio_button_group)
+        self.radio_button3 = RadioButtonLabel("Option 3", self.radio_button_group)
         self.radio_button_list = [self.radio_button1, self.radio_button2, self.radio_button3]
         self.radio_button1.setChecked(True)
         radio_layout.addWidget(self.radio_button1)
@@ -235,12 +343,17 @@ class MainWindow(QMainWindow):
         self.favorite_action = QAction("Solo preferite", self)
         self.favorite_action.setCheckable(True)
         self.favorite_action.setChecked(False)
+        self.favorite_action.toggled.connect(self.show_favorites)
         domande_menu.addSeparator()
         domande_menu.addAction(self.favorite_action)
 
     @pyqtSlot()
     def show_favorites(self):
-        pass
+        if self.favorite_action.isChecked():
+            if not self.current_favorite_set:
+                QMessageBox.warning(self, 'Nessun preferito', 'Nessuna domanda preferita nel set corrente!')
+                self.favorite_action.setChecked(False)
+
 
     @pyqtSlot()
     def toggle_favorite(self):
@@ -257,7 +370,10 @@ class MainWindow(QMainWindow):
         self.current_question_set = self.vela_questions
         self.current_weight_set = self.vela_weights
         self.current_favorite_set = self.vela_favorites
+        self.current_completed_questions = self.completed_questions_vela
         self.current_image_path = 'images_vela'
+        self.show_favorites()
+        self.update_results()
         self.get_new_question()
 
     @pyqtSlot()
@@ -267,7 +383,10 @@ class MainWindow(QMainWindow):
         self.current_question_set = self.entro_questions
         self.current_weight_set = self.entro_weights
         self.current_favorite_set = self.entro_favorites
+        self.current_completed_questions = self.completed_questions_entro
         self.current_image_path = 'images_entro'
+        self.show_favorites()
+        self.update_results()
         self.get_new_question()
 
     @pyqtSlot()
@@ -277,18 +396,20 @@ class MainWindow(QMainWindow):
             self.get_new_question()
             return
 
+        self.current_completed_questions.add(int(self.current_question_id))
+
         answer = [button.isChecked() for button in self.radio_button_list].index(True)
         if answer == self.current_question_set[self.current_question_id]['right_answer']:
             # Correct answer
             #print('old weight', self.current_weight_set[self.current_question_id])
-            self.current_weight_set[self.current_question_id] = get_updated_weight(self.current_weight_set[self.current_question_id], -0.2)
+            self.current_weight_set[self.current_question_id] = get_updated_weight(self.current_weight_set[self.current_question_id], -0.1)
             #print('new weight', self.current_weight_set[self.current_question_id])
             self.radio_button_list[answer].setStyleSheet("border: 3px solid green;")
             self.result_history.append(1)
         else:
             # Wrong answer: make it appear more often
             #print('old weight', self.current_weight_set[self.current_question_id])
-            self.current_weight_set[self.current_question_id] = get_updated_weight(self.current_weight_set[self.current_question_id], 0.2)
+            self.current_weight_set[self.current_question_id] = get_updated_weight(self.current_weight_set[self.current_question_id], 0.1)
             #print('new weight', self.current_weight_set[self.current_question_id])
             self.radio_button_list[answer].setStyleSheet("border: 3px solid red;")
             self.radio_button_list[self.current_question_set[self.current_question_id]['right_answer']].setStyleSheet("border: 3px solid green;")

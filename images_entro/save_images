@@ -1,0 +1,13 @@
+#!/bin/bash
+
+current=$1
+
+while /bin/true
+do
+    fname=`printf fig%03d.png $current`
+    echo "saving $fname..."
+    sleep 1
+    flameshot gui -c
+    xclip -selection clipboard -t image/png -o > $fname
+    ((current++))
+done
