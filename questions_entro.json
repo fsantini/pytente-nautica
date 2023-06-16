@@ -2588,7 +2588,7 @@
         "num": 236,
         "question": "Quale tra queste affermazioni \u00e8 corretta?",
         "answers": [
-            "il getto degli estintori a schiuma deve essere diretto alla base delle fiamme e non deve essere impiegato per estinguere incendi di materiale elettrico sotto",
+            "il getto degli estintori a schiuma deve essere diretto alla base delle fiamme e non deve essere impiegato per estinguere incendi di materiale elettrico sotto tensione.",
             "il getto degli estintori a schiuma deve essere diretto verso la superficie delle fiamme ed impiegato principalmente per estinguere incendi di materiale elettrico sotto tensione.",
             "l'estintore ad anidride carbonica va utilizzato solo all'aperto, perch\u00e9 agisce per raffreddamento."
         ],
@@ -3765,7 +3765,7 @@
         "num": 343,
         "question": "Quali fattori devono essere tenuti in debita considerazione per procedere alle operazioni di disincaglio?",
         "answers": [
-            "tipo e rilievo dei fondali, entit\u00e0 dell'avaria subita, manovra pi\u00f9 idonea da porre in essere in relazione alle caratteristiche dell'unit\u00e0 e del luogo in cui si \u00e8 verificato il",
+            "tipo e rilievo dei fondali, entit\u00e0 dell'avaria subita, manovra pi\u00f9 idonea da porre in essere in relazione alle caratteristiche dell'unit\u00e0 e del luogo in cui si \u00e8 verificato il sinistro.",
             "altezza del bordo libero.",
             "tipo di timone di cui dispone l'unit\u00e0 navale."
         ],
@@ -4291,9 +4291,9 @@
     },
     {
         "num": 391,
-        "question": "Quale effetto si genera in navigazione abbassando il piede",
+        "question": "Quale effetto si genera in navigazione abbassando il piede (trim negativo), in un'unità spinta da un motore fuoribordo?",
         "answers": [
-            "(trim negativo), in un'unit\u00e0 spinta da un motore fuoribordo? l'inclinazione della prua verso il basso per attutire gli impatti sulle onde con il mare formato.",
+            "l'inclinazione della prua verso il basso per attutire gli impatti sulle onde con il mare formato.",
             "si migliora il rendimento del circuito di raffreddamento.",
             "si riduce la possibilit\u00e0 che l'imbarcazione possa ingavonarsi."
         ],
@@ -5503,7 +5503,7 @@
         "num": 501,
         "question": "Quando viene utilizzato di massima l'ormeggio su di un ancora o a ruota?",
         "answers": [
-            "in presenza di condimeteo particolarmente avverse.",
+            "in presenza di condizioni meteo particolarmente avverse.",
             "negli specchi d'acqua caratterizzati da un adeguato spazio libero intorno.",
             "con una quantit\u00e0 di catena tale da farla risultare a picco."
         ],
@@ -5877,7 +5877,7 @@
         "num": 535,
         "question": "Le cosiddette ancore appennellate si hanno quando:",
         "answers": [
-            "per una migliore tenuta in condizioni critiche, al diamante dell'ancora principale viene fissata una seconda ancora, detta \"pennello\", con una catena di",
+            "per una migliore tenuta in condizioni critiche, al diamante dell'ancora principale viene fissata una seconda ancora, detta \"pennello\", con una catena di 4-6 metri.",
             "si d\u00e0 fondo a 2 ancore con calumi aperti a 180 gradi circa.",
             "si d\u00e0 fondo a 2 ancore con calumi aperti a 45 gradi circa."
         ],
@@ -6590,9 +6590,9 @@
     },
     {
         "num": 600,
-        "question": "Un'unit\u00e0 a motore, di lunghezza inferiore a 50 metri, che stia effettuando una normale ordinaria navigazione notturna, deve mostrare (individuare la",
+        "question": "Un'unit\u00e0 a motore, di lunghezza inferiore a 50 metri, che stia effettuando una normale ordinaria navigazione notturna, deve mostrare (individuare la combinazione corretta):",
         "answers": [
-            "combinazione corretta): testa d'albero Bianco, a dritta Verde, a sinistra Rosso, coronamento Giallo.",
+            "testa d'albero Bianco, a dritta Verde, a sinistra Rosso, coronamento Giallo.",
             "testa d'albero Bianco, a dritta Verde, a sinistra Rosso, coronamento Bianco.",
             "testa d'albero Rosso, a dritta Bianco, a sinistra Verde, coronamento Rosso."
         ],
@@ -7340,8 +7340,8 @@
         "num": 668,
         "question": "Per quanto concerne la navigazione delle unit\u00e0 navali all'interno di uno schema di separazione del traffico, come nello stretto di Messina, quale tra queste affermazioni \u00e8 corretta?",
         "answers": [
-            "l'unit\u00e0 di lunghezza inferiore a 20 metri o l'unit\u00e0 a vela non deve intralciare il passaggio di una nave a propulsione meccanica che segue lo schema di separazione del",
-            "l'unit\u00e0  di lunghezza inferiore a 20 metri o l'unit\u00e0 a vela deve effettuare ogni cambiamento di rotta e/o di velocit\u00e0 con successive variazioni non superiori a 5\u00b0 di rotta o di 1 nodo",
+            "l'unit\u00e0 di lunghezza inferiore a 20 metri o l'unit\u00e0 a vela non deve intralciare il passaggio di una nave a propulsione meccanica che segue lo schema di separazione del traffico.",
+            "l'unit\u00e0  di lunghezza inferiore a 20 metri o l'unit\u00e0 a vela deve effettuare ogni cambiamento di rotta e/o di velocit\u00e0 con successive variazioni non superiori a 5\u00b0 di rotta o di 1 nodo di velocit\u00e0.",
             "l'unit\u00e0  di lunghezza superiore a 24 metri o l'unit\u00e0 a vela deve effettuare ogni cambiamento di rotta e/o di velocit\u00e0 con successive variazioni non superiori a 5\u00b0 di rotta o di 1 nodo di velocit\u00e0."
         ],
         "right_answer": 0,
@@ -8214,7 +8214,7 @@
             "boa luminosa cilindrica."
         ],
         "right_answer": 0,
-        "image": null
+        "image": "fig067.png"
     },
     {
         "num": 748,
@@ -11038,7 +11038,7 @@
         "answers": [
             "361.",
             "tanti quanti sono i paralleli.",
-            "360, di cui 180 contati di grado in grado a partire dal meridiano di Greenwich verso Est ed altrettanti 180 contati di grado in grado a partire dal meridiano di Greenwich verso Ovest, per\u00f2 possiamo"
+            "360, di cui 180 contati di grado in grado a partire dal meridiano di Greenwich verso Est ed altrettanti 180 contati di grado in grado a partire dal meridiano di Greenwich verso Ovest, per\u00f2 possiamo tracciarne infiniti."
         ],
         "right_answer": 2,
         "image": null
@@ -11775,7 +11775,7 @@
         "answers": [
             "le unit\u00e0 da diporto con lunghezza superiore a 15 metri devono essere dotate sia di apparati GPS fissi, alimentati dall'impianto elettrico di bordo, nonch\u00e9 di apparati GPS  portatili, alimentati da batterie",
             "le unit\u00e0 da diporto possono essere dotate sia di apparati GPS fissi, alimentati dall'impianto elettrico di bordo, nonch\u00e9 di apparati GPS portatili, alimentati da batterie alcaline.",
-            "le unit\u00e0  da diporto in navigazione, effettuata ad una distanza dalla costa superiore a 12 miglia nautiche, devono essere dotate sia di apparati GPS fissi, alimentati dall'impianto elettrico di bordo, nonch\u00e9 di apparati GPS portatili, alimentati da batterie nichel-"
+            "le unit\u00e0  da diporto in navigazione, effettuata ad una distanza dalla costa superiore a 12 miglia nautiche, devono essere dotate sia di apparati GPS fissi, alimentati dall'impianto elettrico di bordo, nonch\u00e9 di apparati GPS portatili, alimentati da batterie nichel-cadmio."
         ],
         "right_answer": 1,
         "image": null
@@ -12037,7 +12037,7 @@
         "num": 1095,
         "question": "Cos'\u00e8 una bussola magnetica di bordo?",
         "answers": [
-            "lo strumento di bordo utilizzato per la navigazione stimata, basato sulle propriet\u00e0 del campo magnetico terrestre, in grado di  orientarsi verso il Nord",
+            "lo strumento di bordo utilizzato per la navigazione stimata, basato sulle propriet\u00e0 del campo magnetico terrestre, in grado di  orientarsi verso il Nord bussola.",
             "lo strumento di bordo utilizzato per la navigazione stimata, basato sulle propriet\u00e0 del campo magnetico terrestre, in grado di orientarsi verso il Nord vero.",
             "lo strumento di bordo utilizzato per la navigazione stimata, basato sulle propriet\u00e0 del campo magnetico terrestre, in grado di orientarsi verso il Nord magnetico."
         ],
@@ -12497,9 +12497,9 @@
     },
     {
         "num": 1137,
-        "question": "Avuto riguardo al concetto di navigazione stimata, quale tra",
+        "question": "Avuto riguardo al concetto di navigazione stimata, quale tra queste affermazioni è corretta?",
         "answers": [
-            "queste affermazioni \u00e8 corretta? la navigazione stimata consente al navigante esperto di effettuare decomunicazioni radio pi\u00f9nitide.",
+            "la navigazione stimata consente al navigante esperto di effettuare decomunicazioni radio pi\u00f9nitide.",
             "l'esperienza marinaresca maturata nella condotta della navigazione contribuisce a far s\u00ec che il navigante possa conoscere, in ogni istante, la pi\u00f9 probabile posizione raggiunta conla propria unit\u00e0 navale.",
             "la navigazione stimata consente al navigante esperto di effettuare dei punti nave costieri pi\u00f9 accurati."
         ],
@@ -12508,9 +12508,9 @@
     },
     {
         "num": 1138,
-        "question": "Avuto riguardo al concetto di navigazione stimata, cosa si",
+        "question": "Avuto riguardo al concetto di navigazione stimata, cosa si intende per punto stimato? ",
         "answers": [
-            "intende per punto stimato? un punto che rappresenta la posizione dell'unit\u00e0 navale ottenuta mediante due rilevamenti simultanei.",
+            "un punto che rappresenta la posizione dell'unit\u00e0 navale ottenuta mediante due rilevamenti simultanei.",
             "un punto che rappresenta l'esatta posizione dell'unit\u00e0 navale.",
             "un punto che rappresenta in maniera approssimata la posizione dell'unit\u00e0."
         ],
@@ -12519,9 +12519,9 @@
     },
     {
         "num": 1139,
-        "question": "Come si risolvono di massima i problemi della navigazione",
+        "question": "Come si risolvono di massima i problemi della navigazione stimata?",
         "answers": [
-            "stimata? geometricamente mediante l'intersezione di due o pi\u00f9 rilevamenti.",
+            "geometricamente mediante l'intersezione di due o pi\u00f9 rilevamenti.",
             "graficamente mediante l'utilizzo della carta nautica del Mercatore la quale rettifica le lossodromie",
             "analiticamente mediante l'osservazione astronomica."
         ],
@@ -12530,9 +12530,9 @@
     },
     {
         "num": 1140,
-        "question": "Quali possono essere i fattori che concorrono a rendere il",
+        "question": "Quali possono essere i fattori che concorrono a rendere il punto nave stimato non preciso?",
         "answers": [
-            "punto nave stimato non preciso? il margine di errore dei rilevamenti costieri effettuati durante la navigazione.",
+            "il margine di errore dei rilevamenti costieri effettuati durante la navigazione.",
             "scarroccio, deriva, declinazione magnetica e deviazione magnetica.",
             "la differenza di rilevamento tra i rilevamenti costieri effettuati durante la navigazione."
         ],
@@ -12541,11 +12541,11 @@
     },
     {
         "num": 1141,
-        "question": "Dovendo effettuare un atterraggio, a conclusione di una",
+        "question": "Dovendo effettuare un atterraggio, a conclusione di una navigazione stimata, \u00e8 opportuno considerare che: ",
         "answers": [
-            "navigazione stimata, \u00e8 opportuno considerare che: la posizione stimata non pu\u00f2 differire di oltre mezzo miglio nautico rispetto alla posizioneeffettiva.",
+            "la posizione stimata non pu\u00f2 differire di oltre mezzo miglio nautico rispetto alla posizioneeffettiva.",
             "la posizione stimata rappresenta di fatto il centro di una zona di incertezza, la cui estensione pu\u00f2 risultare anche molto vasta.",
-            "la posizione stimata non pu\u00f2 differire di oltre un quarto di miglnautico rispetto alla posizione effettiva."
+            "la posizione stimata non pu\u00f2 differire di oltre un quarto di miglio nautico rispetto alla posizione effettiva."
         ],
         "right_answer": 1,
         "image": null
@@ -12563,9 +12563,9 @@
     },
     {
         "num": 1143,
-        "question": "Considerato il calcolo delle velocit\u00e0 in mare, a cosa",
+        "question": "Considerato il calcolo delle velocit\u00e0 in mare, a cosa corrisponde il nodo?",
         "answers": [
-            "corrisponde il nodo? a un miglio marino percorso in un'ora.",
+            "a un miglio marino percorso in un'ora.",
             "a un chilometro percorun'ora.",
             "a un metro percorso in un secondo."
         ],
@@ -12574,9 +12574,9 @@
     },
     {
         "num": 1144,
-        "question": "Avuto riguardo alla navigazione stimata, volendo calcolare il",
+        "question": "Avuto riguardo alla navigazione stimata, volendo calcolare il valore della velocità riferita ad un percorso stimato, effettuato in un determinato intervallo temporale, quale tra le seguenti formule dovrà essere applicata?",
         "answers": [
-            "valore della velocit\u00e0 riferita ad un percorso stimato, effettuato in un determinato intervallo temporale, quale tra le seguenti formule dovr\u00e0 essere applicata? S = V * T, dove V si esprime in nodi (miglia nautiche orarie) e T in ore e decimi di ora.",
+            "S = V * T, dove V si esprime in nodi (miglia nautiche orarie) e T in ore e decimi di ora.",
             "V = S / T, dove S si esprime in miglia nautiche e T in ore e decimi di ora.",
             "T = S / V, dove S si esprime in miglia nautiche e V in nodi (miglia nautiche orarie)."
         ],
@@ -12585,9 +12585,9 @@
     },
     {
         "num": 1145,
-        "question": "Avuto riguardo alla navigazione stimata, volendo calcolare il",
+        "question": "Avuto riguardo alla navigazione stimata, volendo calcolare il valore del percorso stimato compreso tra due punti, considerando la velocità propulsiva della propria unità navale e l'intervallo temporale impiegato per percorrerlo, quale tra le seguenti formule dovrà essere applicata?",
         "answers": [
-            "valore del percorso stimato compreso tra due punti, considerando la velocit\u00e0 propulsiva della propria unit\u00e0 navale e l'intervallo temporale impiegato per percorrerlo, quale tra le seguenti formule dovr\u00e0 essere applicata? V = S / T, dove S si esprime in miglia nautiche e T in ore e decimi di ora.",
+            "V = S / T, dove S si esprime in miglia nautiche e T in ore e decimi di ora.",
             "T = S / V, dove S si esprime in miglia nautiche e V in nodi (miglia nautiche orarie).",
             "S = V * T, dove V si esprime in nodi(miglia nautiche orarie) e T in ore e decimi di ora."
         ],
@@ -13355,9 +13355,9 @@
     },
     {
         "num": 1215,
-        "question": "Avuto riguardo ai luoghi di posizione, cosa si intende per",
+        "question": "Avuto riguardo ai luoghi di posizione, cosa si intende per \"cerchio capace\"?",
         "answers": [
-            "\"cerchio capace\"? \u00e8 il luogo di posizione rappresentato da una circonferenza lungo la quale tutti gli osservatori, ad intervalli temporali di 10 minuti l'uno dall'altro, misurano la stessa differenza di distanza di due distinti",
+            "\u00e8 il luogo di posizione rappresentato da una circonferenza lungo la quale tutti gli osservatori, ad intervalli temporali di 10 minuti l'uno dall'altro, misurano la stessa differenza di distanza di due distinti punti cospicui sulla costa",
             "\u00e8 il luogo di posizione rappresentato da una circonferenza lungo la quale tutti gli osservatori, nel medesimo istante, misurano la stessa differenza di rilevamento di due distinti punti cospicui sulla costa.",
             "\u00e8 il luogo di posizione rappresentato da una circonferenza lungo la quale tutti gli osservatori, ad intervalli temporali di 20 minuti l'uno dall'altro, misurano la stessa somma di rilevamento di due distinti punti cospicui sulla costa."
         ],
@@ -14215,7 +14215,7 @@
         "num": 1293,
         "question": "Ai sensi del Codice della Navigazione, cosa si intende per denuncia di avvenimenti straordinari?",
         "answers": [
-            "la dichiarazione che il comandante dell'unit\u00e0 \u00e8 tenuto a presentare al Comandante del porto o all'Autorit\u00e0 consolare del porto di scalo quando, durante il viaggio, si siano verificati eventi straordinari relativi all'unit\u00e0. navale o alle",
+            "la dichiarazione che il comandante dell'unit\u00e0 \u00e8 tenuto a presentare al Comandante del porto o all'Autorit\u00e0 consolare del porto di scalo quando, durante il viaggio, si siano verificati eventi straordinari relativi all'unit\u00e0. navale o alle persone presenti a bordo.",
             "la dichiarazione che il comandante dell'unit\u00e0 \u00e8 tenuto a presentare al Comandante del porto o all'Autorit\u00e0 consolare del porto di scalo quando, durante il viaggio si siano avvistati cetacei di particolari dimensioni.",
             "la dichiarazione che il comandante dell'unit\u00e0  \u00e8 tenuto a presentare al Comandante del porto o all'Autorit\u00e0 consolare del porto di scalo quando durante il viaggio siano state incontrate perturbazioni meteorologiche di fortissima entit\u00e0."
         ],
@@ -14741,9 +14741,9 @@
     },
     {
         "num": 1341,
-        "question": "A che distanza dalla costa possono navigare le unit\u00e0 a remi",
+        "question": "A che distanza dalla costa possono navigare le unit\u00e0 a remi (pedalò, sandolini ecc.) ?",
         "answers": [
-            "(pedal\u00f2, sandolini ecc.) ? entro 1 miglio dalla costa.",
+            "entro 1 miglio dalla costa.",
             "in base alle condimeteomarine individuate con ordinanza dell'Autorit\u00e0 marittima.",
             "entro 6 miglia."
         ],

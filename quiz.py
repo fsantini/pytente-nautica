@@ -402,14 +402,14 @@ class MainWindow(QMainWindow):
         if answer == self.current_question_set[self.current_question_id]['right_answer']:
             # Correct answer
             #print('old weight', self.current_weight_set[self.current_question_id])
-            self.current_weight_set[self.current_question_id] = get_updated_weight(self.current_weight_set[self.current_question_id], -0.1)
+            self.current_weight_set[self.current_question_id] = get_updated_weight(self.current_weight_set[self.current_question_id], -0.02)
             #print('new weight', self.current_weight_set[self.current_question_id])
             self.radio_button_list[answer].setStyleSheet("border: 3px solid green;")
             self.result_history.append(1)
         else:
             # Wrong answer: make it appear more often
             #print('old weight', self.current_weight_set[self.current_question_id])
-            self.current_weight_set[self.current_question_id] = get_updated_weight(self.current_weight_set[self.current_question_id], 0.1)
+            self.current_weight_set[self.current_question_id] = get_updated_weight(self.current_weight_set[self.current_question_id], 0.02)
             #print('new weight', self.current_weight_set[self.current_question_id])
             self.radio_button_list[answer].setStyleSheet("border: 3px solid red;")
             self.radio_button_list[self.current_question_set[self.current_question_id]['right_answer']].setStyleSheet("border: 3px solid green;")
