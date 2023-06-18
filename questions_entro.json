@@ -434,7 +434,7 @@
         "answers": [
             "la corda pi\u00f9 lunga.",
             "una sartia volante.",
-            "una sartia volante."
+            "una cima di piccolo diametro."
         ],
         "right_answer": 2,
         "image": null
@@ -1134,9 +1134,9 @@
     },
     {
         "num": 104,
-        "question": "Manovrando una unit\u00e0 da diporto dotata di due linee d'asse",
+        "question": "Manovrando una unit\u00e0 da diporto dotata di due linee d'asse (destrorsa a dritta e sinistrorsa a sinistra); si ha che: ",
         "answers": [
-            "(destrorsa a dritta e sinistrorsa a sinistra); si ha che: con il solo motore di dritta in marcia indietro (fermo il motore di sinistra), la prora accosta a dritta.",
+            "con il solo motore di dritta in marcia indietro (fermo il motore di sinistra), la prora accosta a dritta.",
             "con il motore di dritta in marcia avanti e con quello di sinistra in marcia indietro, si ruota sul posto in senso orario.",
             "con il solo motore di sinistra in marcia indietro (fermo il motore di dritta), la poppa accosti a sinistra."
         ],
@@ -1794,9 +1794,9 @@
     },
     {
         "num": 164,
-        "question": "Calcolato il  consumo teorico per una certa navigazione, secondo una buona regola marinara si aggiunge almeno il",
+        "question": "Calcolato il  consumo teorico per una certa navigazione, secondo una buona regola marinara si aggiunge almeno il 30% a causa:",
         "answers": [
-            "30% a causa: di eventuali elementi perturbatori del moto (vento e/o corrente).",
+            "di eventuali elementi perturbatori del moto (vento e/o corrente).",
             "dell\u2019avanzamento ridotto dell\u2019elica rispetto al passo.",
             "del maggior consumo del motore, di qualsiasi tipo, rispetto a quello pubblicizzato dal costruttore."
         ],
@@ -2388,9 +2388,9 @@
     },
     {
         "num": 218,
-        "question": "Essendo noti i dati relativi alla lunghezza del percorso da effettuare (100 miglia nautiche), la velocit\u00e0 di crociera (40",
+        "question": "Essendo noti i dati relativi alla lunghezza del percorso da effettuare (100 miglia nautiche), la velocit\u00e0 di crociera (40 nodi) ed il corrispondente consumo orario (60 l/h), determinare la quantit\u00e0 di carburante relativa alla riserva che dovr\u00e0 essere imbarcata a bordo di un\u2019unit\u00e0 navale.",
         "answers": [
-            "nodi) ed il corrispondente consumo orario (60 l/h), determinare la quantit\u00e0 di carburante relativa alla riserva che dovr\u00e0 essere imbarcata a bordo di un\u2019unit\u00e0 navale. 150 litri.",
+            "150 litri.",
             "90 litri.",
             "45 litri."
         ],
@@ -2410,9 +2410,9 @@
     },
     {
         "num": 220,
-        "question": "Essendo noti i dati relativi alla lunghezza del percorso da effettuare (150 miglia nautiche), la velocit\u00e0 di crociera (30",
+        "question": "Essendo noti i dati relativi alla lunghezza del percorso da effettuare (150 miglia nautiche), la velocit\u00e0 di crociera (30 nodi) ed il corrispondente consumo orario (16 l/h), determinare la quantit\u00e0 di carburante relativa alla riserva che dovr\u00e0 essere imbarcata a bordo di un\u2019unit\u00e0 navale.",
         "answers": [
-            "nodi) ed il corrispondente consumo orario (16 l/h), determinare la quantit\u00e0 di carburante relativa alla riserva che dovr\u00e0 essere imbarcata a bordo di un\u2019unit\u00e0 navale. 8 litri.",
+            "8 litri.",
             "24 litri.",
             "55 litri."
         ],
@@ -2874,7 +2874,7 @@
         "num": 262,
         "question": "Chiunque assume o ritiene il comando o la condotta ovvero la direzione nautica di un'unit\u00e0 da diporto in stato di ebbrezza \u00e8 punito,",
         "answers": [
-            "con una sanzione amministrativa che varia da 1.000 euro a 5.000 euro in relazione al tasso alcolemico rilevato e la sanzione accessoria della revisione",
+            "con una sanzione amministrativa che varia da 1.000 euro a 5.000 euro in relazione al tasso alcolemico rilevato e la sanzione accessoria della revisione partiale della patente nautica prima della scadenza.",
             "con una sanzione amministrativa che varia da 500 euro a 1.500 euro qualunque sia il tasso alcolemico rilevato.",
             "con una sanzione amministrativa che varia da 2.755 euro a 15.000 euro in relazione al tasso alcolemico rilevato."
         ],
@@ -3004,9 +3004,9 @@
     },
     {
         "num": 274,
-        "question": "A bordo del natante da diporto, durante la navigazione entro le",
+        "question": "A bordo del natante da diporto, durante la navigazione entro le 6 miglia dalla costa, quanti estintori devono essere presenti a bordo?",
         "answers": [
-            "6 miglia dalla costa, quanti estintori devono essere presenti a bordo? almeno 1.",
+            "almeno 1.",
             "non meno di 2.",
             "non pi\u00f9 di 4."
         ],
@@ -3488,9 +3488,9 @@
     },
     {
         "num": 318,
-        "question": "Le dotazione minima indispensabile del materiale sanitario di cui devono essere dotate le imbarcazioni da diporto impiegate in attivit\u00e0 di noleggio \"senza limiti\" dalla costa \u00e8 la medesima",
+        "question": "Le dotazione minima indispensabile del materiale sanitario di cui devono essere dotate le imbarcazioni da diporto impiegate in attivit\u00e0 di noleggio \"senza limiti\" dalla costa \u00e8 la medesima di quella delle unit\u00e0 non impiegate in attivit\u00e0 di noleggio?",
         "answers": [
-            "di quella delle unit\u00e0 non impiegate in attivit\u00e0 di noleggio? si.",
+            "si.",
             "no, \u00e8 fissata in un apposita tabella.",
             "si, ma raddoppia la dotazione di cotone."
         ],
@@ -3499,9 +3499,9 @@
     },
     {
         "num": 319,
-        "question": "Qual \u00e8 la Tabella delle dotazioni contenente la quantit\u00e0 minima indispensabile del materiale sanitario di cui devono essere dotate le imbarcazioni da diporto abilitate alla navigazione senza alcun limite, senza personale imbarcato e non",
+        "question": "Qual \u00e8 la Tabella delle dotazioni contenente la quantit\u00e0 minima indispensabile del materiale sanitario di cui devono essere dotate le imbarcazioni da diporto abilitate alla navigazione senza alcun limite, senza personale imbarcato e non impiegate in attivit\u00e0 di noleggio?",
         "answers": [
-            "impiegate in attivit\u00e0 di noleggio? Tabella \"A\".",
+            "Tabella \"A\".",
             "Tabella \"B\".",
             "Tabella \"D\"."
         ],
@@ -3787,7 +3787,7 @@
         "num": 345,
         "question": "Avuto riguardo alla falla, quale tra queste affermazioni \u00e8 corretta?",
         "answers": [
-            "se si verifica una falla nella parte prodiera \u00e8 opportuno arrestare il moto dell'unit\u00e0 navale per evitare che l'avanzamento della stessa possa incrementare l'afflusso",
+            "se si verifica una falla nella parte prodiera \u00e8 opportuno arrestare il moto dell'unit\u00e0 navale per evitare che l'avanzamento della stessa possa incrementare l'afflusso d'acqua nel suo interno.",
             "se si verifica una falla a prua \u00e8 opportuno aumentare la velocit\u00e0 dell'unit\u00e0 navale per diminuire il flusso dell'acqua che tende ad allagare i compartimenti prodieri.",
             "se si verifica una falla a prua \u00e8 opportuno spostare i pesi longitudinalmente verso proravia."
         ],
@@ -4260,8 +4260,8 @@
         "num": 388,
         "question": "Ai sensi del Codice della Navigazione, quale tra queste affermazioni \u00e8 la pi\u00f9 corretta per quanto concerne \"l'abbandono nave\"?",
         "answers": [
-            "il comandante dell'unit\u00e0 ordina \"l'abbandono\" della stessa solo dopo aver accertato di persona che tutti i mezzi suggeriti dall'arte nautica non sono in grado di",
-            "il comandante dell'unit\u00e0 ordina \"l'abbandono\" della stessa solo dopo aver verificato di persona che oltre alla presenza di infiltrazioni nello scafo si sia verificata la contemporanea",
+            "il comandante dell'unit\u00e0 ordina \"l'abbandono\" della stessa solo dopo aver accertato di persona che tutti i mezzi suggeriti dall'arte nautica non sono in grado di salvarla.",
+            "il comandante dell'unit\u00e0 ordina \"l'abbandono\" della stessa solo dopo aver verificato di persona che oltre alla presenza di infiltrazioni nello scafo si sia verificata la contemporanea avaria degli organi propulsivi.",
             "il comandante ordina \"l'abbandono\" della stessa solo dopo aver verificato di persona il mancato funzionamento di tutti gli apparati di navigazione."
         ],
         "right_answer": 0,
@@ -4359,9 +4359,9 @@
         "num": 397,
         "question": "A quale funzione assolve il sistema DSC (Digital Selective Calling) installato su alcune tipologie di apparati radio?",
         "answers": [
-            "trasmettendo in frequenza MF, permette di inviare automaticamente un segnale di soccorso ad altre unit\u00e0 navali che si trovino entro un raggio non superiore alle 15",
-            "trasmettendo in frequenza VHF e HF, permette di inviare automaticamente onde radio digitali, eliminando cos\u00ec le deviazioni che le stesse subiscono sottocosta per",
-            "trasmettendo in frequenza VHF e HF, permette di inviare automaticamente un segnale di soccorso, di urgenza o di sicurezza ad altre navi nelle vicinanze, ai Centri di Coordinamento del"
+            "trasmettendo in frequenza MF, permette di inviare automaticamente un segnale di soccorso ad altre unit\u00e0 navali che si trovino entro un raggio non superiore alle 15 miglia nautiche",
+            "trasmettendo in frequenza VHF e HF, permette di inviare automaticamente onde radio digitali, eliminando cos\u00ec le deviazioni che le stesse subiscono sottocosta per rifrazione elettromagnetia",
+            "trasmettendo in frequenza VHF e HF, permette di inviare automaticamente un segnale di soccorso, di urgenza o di sicurezza ad altre navi nelle vicinanze, ai Centri di Coordinamento del Soccorso Marittimo e alle Stazioni Costiere"
         ],
         "right_answer": 2,
         "image": null
@@ -4621,9 +4621,9 @@
     },
     {
         "num": 421,
-        "question": "In caso di richiesta di soccorso, in che occasione si utilizzano i",
+        "question": "In caso di richiesta di soccorso, in che occasione si utilizzano i \"razzi a paracadute a luce rossa\"?",
         "answers": [
-            "\"razzi a paracadute a luce rossa\"? sempre.",
+            "sempre.",
             "solo se sono ben visibili le luci di una nave, di un aeroplano, della costa.",
             "se si presume la presenza di una nave, di un aeroplano, della costa."
         ],
@@ -4632,9 +4632,9 @@
     },
     {
         "num": 422,
-        "question": "In caso di richiesta di soccorso, in che occasione si utilizzano i",
+        "question": "In caso di richiesta di soccorso, in che occasione si utilizzano i \"fuochi a mano a luce rossa\"? ",
         "answers": [
-            "\"fuochi a mano a luce rossa\"? se sono ben visibili le luci di una nave, di un aeroplano, della costa.",
+            "se sono ben visibili le luci di una nave, di un aeroplano, della costa.",
             "se si presume la presenza di una nave, di un aeroplano o della costa.",
             "sempre."
         ],
@@ -4819,9 +4819,9 @@
     },
     {
         "num": 439,
-        "question": "Le comunicazioni radio effettuate mediante apparati VHF",
+        "question": "Le comunicazioni radio effettuate mediante apparati VHF possono essere effettuate qualora:",
         "answers": [
-            "possono essere effettuate qualora: le antenne di due stazioni comunicanti sono ubicate ad un'altezza di circa due metri al di sotto della linea dell'orizzonte.",
+            "le antenne di due stazioni comunicanti sono ubicate ad un'altezza di circa due metri al di sotto della linea dell'orizzonte.",
             "le antenne di due stazioni comunicanti sono ubicate al di sopra della linea dell'orizzonte.",
             "le antenne di due stazioni comunicanti sono ubicate ad un'altezza di circa un metro al di sotto della linea dell'orizzonte."
         ],
@@ -5072,7 +5072,7 @@
     },
     {
         "num": 462,
-        "question": "Per il demanio marittimo non in regime di concessione destinato alla navigazione e al trasporto marittimo, la riserva per gli accosti alle  unit\u00e0 da diporto in transito \u00e8 disciplinata: con ordinanza del capo del circondario marittimo competente",
+        "question": "Per il demanio marittimo non in regime di concessione destinato alla navigazione e al trasporto marittimo, la riserva per gli accosti alle  unit\u00e0 da diporto in transito \u00e8 disciplinata:",
         "answers": [
             "con ordinanza del Capo del circondario marittimo competente.",
             "dal Prefetto.",
@@ -5107,7 +5107,7 @@
         "num": 465,
         "question": "Gli ormeggi riservati alle persone con disabilit\u00e0:",
         "answers": [
-            "quando non impegnati a tale fine, possono essere occupati da altra unit\u00e0, con l'obbligo di essere liberati in caso di richiesta di portatore di handicap comunicata al concessionario almeno 24",
+            "quando non impegnati a tale fine, possono essere occupati da altra unit\u00e0, con l'obbligo di essere liberati in caso di richiesta di portatore di handicap comunicata al concessionario almeno 24 ore prima.",
             "non possono mai essere occupati da altra unit\u00e0.",
             "possono essere occupati solo da natanti per trascorrere la notte."
         ],
@@ -5211,7 +5211,7 @@
             "oltre ai segnalamenti marittimi previsti,  una luce lampeggiante gialla visibile a 360\u00b0 a una distanza non inferiore ai 300 metri."
         ],
         "right_answer": 2,
-        "image": "fig068.png"
+        "image": null
     },
     {
         "num": 475,
@@ -5681,7 +5681,7 @@
         "answers": [
             "che abbiamo finito di calare un\u2019ancora.",
             "la profondit\u00e0 della zona ove si vuole dar fondo all\u2019ancora.",
-            "la profondit\u00e0 della zona ove si vuole dar fondo all\u2019ancora."
+            "la parte di catena che viene a trovarsi fuori bordo."
         ],
         "right_answer": 2,
         "image": null
@@ -6568,9 +6568,9 @@
     },
     {
         "num": 598,
-        "question": "Quando il dato della velocit\u00e0 fornito dal solcometro",
+        "question": "Quando il dato della velocit\u00e0 fornito dal solcometro (comunemente detto anche log) non \u00e8 attendibile:",
         "answers": [
-            "(comunemente detto anche log) non \u00e8 attendibile: in caso di presenza di vento.",
+            "in caso di presenza di vento.",
             "in caso di presenza di corrente.",
             "non \u00e8 vero, \u00e8 sempre attendibile perch\u00e9 tiene conto di deriva e scarroccio."
         ],
@@ -6678,9 +6678,9 @@
     },
     {
         "num": 608,
-        "question": "Siamo in navigazione diurna a bordo della nostra",
+        "question": "Siamo in navigazione diurna a bordo della nostra imbarcazione quando rileviamo un'unit\u00e0 che presenta un cono disposto come in figura a fianco: cosa indica questo segnale?",
         "answers": [
-            "imbarcazione quando rileviamo un'unit\u00e0 che presenta un cono disposto come in figura a fianco: cosa indica questo segnale? un'unit\u00e0 che procede contemporaneamente  a vela e a motore.",
+            "un'unit\u00e0 che procede contemporaneamente  a vela e a motore.",
             "un'unit\u00e0 da diporto intenta alla pesca sportiva.",
             "un'unit\u00e0 che non governa, con abbrivio."
         ],
@@ -7278,7 +7278,7 @@
             "da pesca, di lunghezza inferiore a 50 metri, che \u00e8 intenta alla pesca non a strascico che dirige a dritta dell'osservatore.",
             "a motore, di lunghezza uguale o superiore a 50 metri, che sta dirigendo a sinistra dell'osservatore."
         ],
-        "right_answer": 1,
+        "right_answer": 2,
         "image": "fig053.png"
     },
     {
@@ -7382,9 +7382,9 @@
     },
     {
         "num": 672,
-        "question": "Per quanto concerne la situazione di rotte incrociate, implicanti un pericolo di collisione, tra due unit\u00e0 a propulsione",
+        "question": "Per quanto concerne la situazione di rotte incrociate, implicanti un pericolo di collisione, tra due unit\u00e0 a propulsione meccanica:",
         "answers": [
-            "meccanica: l'unit\u00e0  che vede l'altra sulla propria sinistra deve lasciarle libera la rotta e, quando le circostanze lo permettono, deve evitare di passarle di poppa.",
+            "l'unit\u00e0  che vede l'altra sulla propria sinistra deve lasciarle libera la rotta e, quando le circostanze lo permettono, deve evitare di passarle di poppa.",
             "l'unit\u00e0  che vede l'altra sulla propria dritta deve lasciarle libera la rotta e, quando le circostanze lo permettono, deve evitare di passarle di prora.",
             "l'unit\u00e0 che vede l'altra sulla propria dritta deve incrementare la propria velocit\u00e0 e garantire un adeguato servizio di vedetta."
         ],
@@ -7602,9 +7602,9 @@
     },
     {
         "num": 692,
-        "question": "Salvo disposizioni contrarie espressamente previste nel Regolamento per Prevenire gli Abbordi in Mare (Colreg '72), in generale un'unit\u00e0 a motore verso chi ha l'obbligo di dare la precedenza? (individuare la risposta con l'ordine di",
+        "question": "Salvo disposizioni contrarie espressamente previste nel Regolamento per Prevenire gli Abbordi in Mare (Colreg '72), in generale un'unit\u00e0 a motore verso chi ha l'obbligo di dare la precedenza? (individuare la risposta con l'ordine di precedenza corretto):",
         "answers": [
-            "precedenza corretto): nell'ordine: nave che non governa, nave con manovrabilit\u00e0 limitata, nave intenta a pescare, nave a vela.",
+            "nell'ordine: nave che non governa, nave con manovrabilit\u00e0 limitata, nave intenta a pescare, nave a vela.",
             "nell'ordine: nave con manovrabilit\u00e0 limitata, nave intenta a dragare, nave intenta a pescare, nave a vela.",
             "nell'ordine: nave con manovrabilit\u00e0 limitata, nave intenta a posare cavi sottomarini, nave intenta a pescare, nave a vela."
         ],
@@ -8099,8 +8099,8 @@
         "num": 737,
         "question": "Cosa indica la seguente sigla alfanumerica posta in prossimit\u00e0 del faro di Capo Negro dell'Isola di Zannone Fl(3) 10s 37m 12M?",
         "answers": [
-            "che emette una luce lampeggiante a gruppi di 10 lampi ogni 3 secondi, la cui struttura ha un'altezza rispetto al livello medio del",
-            "che emette una luce lampeggiante a gruppi di 3 lampi ogni 10 secondi, la cui struttura ha un'altezza rispetto al livello medio del mare di 37 metri, ed \u00e8",
+            "che emette una luce lampeggiante a gruppi di 10 lampi ogni 3 secondi, la cui struttura ha un'altezza rispetto al livello medio del mare di 10 metri,ed \u00e8 visibile ad una portata nominale di 37,12 miglia nautiche.",
+            "che emette una luce lampeggiante a gruppi di 3 lampi ogni 10 secondi, la cui struttura ha un'altezza rispetto al livello medio del mare di 37 metri, ed \u00e8 visibile ad una portata nominale di 12 miglia nautiche",
             "che emette una luce fissa di 3 secondi, la cui struttura ha un'altezza rispetto al livello medio del mare di 10 metri, ed \u00e8 visibile ad una portata nominale di 12 miglia nautiche."
         ],
         "right_answer": 1,
@@ -8856,9 +8856,9 @@
     },
     {
         "num": 806,
-        "question": "Di un faro si legge << 0.5 (in grassetto) - 1 - 0.5 (in grassetto) -",
+        "question": "Di un faro si legge << 0.5 (in grassetto) - 1 - 0.5 (in grassetto) - 2 >> nell'Elenco Fari e segnali da nebbia:",
         "answers": [
-            "2 >> nell'Elenco Fari e segnali da nebbia: vi sono due fasi di eclissi ciascuna della durata di 0,5 secondi.",
+            "vi sono due fasi di eclissi ciascuna della durata di 0,5 secondi.",
             "vi sono due fasi di luce di cui la prima dura 1 secondo e la seconda dura 2 secondi.",
             "il \"periodo\" ha una durata di 4 secondi."
         ],
@@ -8867,9 +8867,9 @@
     },
     {
         "num": 807,
-        "question": "Di un faro si legge << 1,5 (in grassetto) - 2 - 1.5 (in grassetto) -",
+        "question": "Di un faro si legge << 1,5 (in grassetto) - 2 - 1.5 (in grassetto) - 2 >> nell'Elenco Fari e segnali da nebbia:",
         "answers": [
-            "2 >> nell'Elenco Fari e segnali da nebbia: vi sono due fasi di eclissi della durata complessiva di 3 secondi.",
+            "vi sono due fasi di eclissi della durata complessiva di 3 secondi.",
             "vi sono due fasi di luce, ciascuna della durata di 2 secondi.",
             "il \"periodo\" ha una durata di 7 secondi."
         ],
@@ -9439,9 +9439,9 @@
     },
     {
         "num": 859,
-        "question": "Quali sono le principali caratteristiche delle nubi denominate",
+        "question": "Quali sono le principali caratteristiche delle nubi denominate \"cirri\"?",
         "answers": [
-            "\"cirri\"? colore roseo, struttura lattiginosa, sono raggruppate a banchi.",
+            "colore roseo, struttura lattiginosa, sono raggruppate a banchi.",
             "colore grigio o bluastro, forma imponente.",
             "colore bianco, struttura fibrosa, isolate."
         ],
@@ -9485,7 +9485,7 @@
         "num": 863,
         "question": "Quando un fronte si definisce freddo?",
         "answers": [
-            "quando una massa d'aria fredda (quindi meno umida ma pi\u00f9 densa) si avvicina e si incunea sotto a una massa relativamente pi\u00f9 calda (pi\u00f9 umida e pi\u00f9 leggera), facendola salire e determinando un raffreddamento della regione",
+            "quando una massa d'aria fredda (quindi meno umida ma pi\u00f9 densa) si avvicina e si incunea sotto a una massa relativamente pi\u00f9 calda (pi\u00f9 umida e pi\u00f9 leggera), facendola salire e determinando un raffreddamento della regione in cui transita.",
             "quando una massa d'aria pi\u00f9 calda (quindi anche pi\u00f9 umida) si avvicina a una relativamente pi\u00f9 fredda (e meno umida), scorrendovi sopra.",
             "quando una massa d'aria si interseca con la superficie terrestre."
         ],
@@ -10310,7 +10310,7 @@
         "num": 938,
         "question": "Il \"fetch minimo\" \u00e8:",
         "answers": [
-            "il tratto di mare, privo di ostacoli, sul quale soffia un vento per un certo periodo, oltre il quale tratto di mare le onde raggiungeranno la massima altezza per quel",
+            "il tratto di mare, privo di ostacoli, sul quale soffia un vento per un certo periodo, oltre il quale tratto di mare le onde raggiungeranno la massima altezza per quel dat vento.",
             "una condizione del mare caratterizzata da onde corte e ripide.",
             "un vento caldo e secco discendente da una catena montuosa."
         ],
@@ -11654,7 +11654,7 @@
         "answers": [
             "carte utilizzate nella navigazione fra isole distanti tra loro per non pi\u00f9 di 12 miglia nautiche.",
             "carte utilizzate per la navigazione tra stati costieri confinanti.",
-            "carte aventi una scala superiore rispetto a quella delle carte costiere, realizzate per rappresentare in modo pi\u00f9 dettagliato particolari zone di interesse  come l'accesso ai porti e zone relative a stretti e"
+            "carte aventi una scala superiore rispetto a quella delle carte costiere, realizzate per rappresentare in modo pi\u00f9 dettagliato particolari zone di interesse  come l'accesso ai porti e zone relative a stretti e passaggi."
         ],
         "right_answer": 2,
         "image": null
@@ -11852,7 +11852,7 @@
         "answers": [
             "effettua sempre automaticamente il calcolo della rotta tenendo conto di ostacoli, pericoli e morfologia della costa.",
             "legge solamente gli ostacoli.",
-            "se non di ultimissima generazione, non tiene conto di ostacoli, pericoli e morfologia della costa, \u00e8 quindi necessario impostare delle rotte spezzate; comunque, anche in caso di rotta automatica, l\u2019esito va"
+            "se non di ultimissima generazione, non tiene conto di ostacoli, pericoli e morfologia della costa, \u00e8 quindi necessario impostare delle rotte spezzate; comunque, anche in caso di rotta automatica, l\u2019esito va comunque sempre verificato"
         ],
         "right_answer": 2,
         "image": null
@@ -11881,9 +11881,9 @@
     },
     {
         "num": 1081,
-        "question": "I 360 gradi dell'orizzonte sono divisi in quattro quadranti:  1",
+        "question": "I 360 gradi dell'orizzonte sono divisi in quattro quadranti:  1 NE; 2 SE; 3 SW; 4 NW. La direzione (Rv o Rlv) 157\u00b0 in quale quadrante si dirige?",
         "answers": [
-            "NE; 2 SE; 3 SW; 4 NW. La direzione (Rv o Rlv) 157\u00b0 in quale quadrante si dirige? quarto quadrante.",
+            "quarto quadrante.",
             "secondo quadrante.",
             "primo quadrante."
         ],
@@ -11892,9 +11892,9 @@
     },
     {
         "num": 1082,
-        "question": "In una carta nautica dell'emisfero nord (boreale), com'\u00e8 noto,",
+        "question": "In una carta nautica dell'emisfero nord (boreale), com'\u00e8 noto, la direzione del Nord è verso il bordo in alto della carta stessa. Partendo da un punto qualsiasi della carta, le direzioni 048 gradi e 167 gradi (siano esse rotte o rilevamenti) in quale senso dirigono rispettivamente?",
         "answers": [
-            "la direzione del Nord \u00e8 verso il bordo in alto della carta stessa. Partendo da un punto qualsiasi della carta, le direzioni 048 gradi e 167 gradi (siano esse rotte o rilevamenti) in quale senso dirigono rispettivamente? la direzione 048 gradi verso l'alto e a destra; la direzione 167 gradi verso il basso e a destra.",
+            "la direzione 048 gradi verso l'alto e a destra; la direzione 167 gradi verso il basso e a destra.",
             "la direzione 048 gradi verso l'alto e a sinistra; la direzione 167 gradi verso il basso e a destra.",
             "la direzione 048 gradi verso il basso e a sinistra; la direzione 167 gradi verso l'alto e a destra."
         ],
@@ -13269,7 +13269,7 @@
         "num": 1207,
         "question": "Avuto riguardo alla navigazione costiera, quale tra queste affermazioni \u00e8 corretta?",
         "answers": [
-            "il punto nave costiero risulta tanto pi\u00f9 preciso quanto pi\u00f9 affidabili sono gli strumenti utilizzati per la sua determinazione, nonch\u00e9 il metodo impiegato e l'esperienza marinaresca del",
+            "il punto nave costiero risulta tanto pi\u00f9 preciso quanto pi\u00f9 affidabili sono gli strumenti utilizzati per la sua determinazione, nonch\u00e9 il metodo impiegato e l'esperienza marinaresca del navigante.",
             "navigazione costiera \u00e8 subordinata alla conoscenza degli elementi del moto dell'unit\u00e0.",
             "il punto nave ottenuto mediante la navigazione costiera \u00e8 tanto pi\u00f9 preciso quanto pi\u00f9 veloce \u00e8 l'unit\u00e0 navale."
         ],
@@ -13740,9 +13740,9 @@
     },
     {
         "num": 1250,
-        "question": "Il punto nave ricavato con il metodo della navigazione",
+        "question": "Il punto nave ricavato con il metodo della navigazione \"costiera\":",
         "answers": [
-            "\"costiera\": considera lo scarroccio ma non la deriva.",
+            "considera lo scarroccio ma non la deriva.",
             "stima la posizione della nave ad un dato istante in quanto occorre un secondo luogo di posizione.",
             "determina la posizione con sufficiente precisione; \u00e8 quindi affidabile per il prosieguo della navigazione."
         ],
@@ -14107,7 +14107,7 @@
         "answers": [
             "\u00e8 riprodotta a seguito di esaurimento scorte.",
             "annulla l'edizione in vigore.",
-            "\u00e8 una nuova tiratura dell'edizione in vigore di una carta sulla quale non \u00e8 stata incorporata alcuna modifica importante fatta eccezione di quelle derivanti da eventuali Avvisi ai Naviganti (AA.NN.) emessi nel"
+            "\u00e8 una nuova tiratura dell'edizione in vigore di una carta sulla quale non \u00e8 stata incorporata alcuna modifica importante fatta eccezione di quelle derivanti da eventuali Avvisi ai Naviganti (AA.NN.) emessi nel tempo."
         ],
         "right_answer": 2,
         "image": null
@@ -14227,7 +14227,7 @@
         "question": "Ai sensi del Codice della nautica da diporto, quale tra questi comportamenti costituisce un illecito amministrativo?",
         "answers": [
             "la direzione dell'armamento delle vele prodiere senza la prevista abilitazione.",
-            "l'assunzione del comando o della condotta ovvero la direzione nautica di un'unit\u00e0 da diporto senza la prescritta abilitazione, perch\u00e9 non conseguita o revocata o non convalidata per mancanza dei requisiti, ovvero",
+            "l'assunzione del comando o della condotta ovvero la direzione nautica di un'unit\u00e0 da diporto senza la prescritta abilitazione, perch\u00e9 non conseguita o revocata o non convalidata per mancanza dei requisiti, ovvero perch\u00e9 non conseguita o revocata o non convalidata per mancanza dei requisiti, ovvero sospesa o ritirata",
             "omettere di cooperare con i mezzi di cui si dispone, al soccorso di un'altra unit\u00e0 navale."
         ],
         "right_answer": 1,
@@ -14281,7 +14281,7 @@
         "num": 1299,
         "question": "Quale tra queste condotte costituisce un illecito amministrativo?",
         "answers": [
-            "non ottemperare agli ordini impartiti dalla competente Autorit\u00e0 marittima, ai sensi dell'art. 70 Codice della Navigazione, omettendo di cooperare con i mezzi di cui si dispone, al soccorso di",
+            "non ottemperare agli ordini impartiti dalla competente Autorit\u00e0 marittima, ai sensi dell'art. 70 Codice della Navigazione, omettendo di cooperare con i mezzi di cui si dispone, al soccorso di un'altra unit\u00e0 navale.",
             "salvo che il fatto costituisca violazione della normativa sulle aree marine protette, l'utilizzo di un'unit\u00e0 da diporto non osservando una disposizione di legge o di regolamento in materia di sicurezza della navigazione.",
             "tentare il salvataggio nei confronti di un'altra unit\u00e0 navale in pericolo di perdersi qualora non comporti grave rischio per l'unit\u00e0 soccorritrice."
         ],
@@ -14389,9 +14389,9 @@
     },
     {
         "num": 1309,
-        "question": "Si pu\u00f2 immatricolare un\u2019unit\u00e0 avente lunghezza fuori tutto di",
+        "question": "Si pu\u00f2 immatricolare un\u2019unit\u00e0 avente lunghezza fuori tutto di 9,90 metri?",
         "answers": [
-            "9,90 metri? s\u00ec, ma subisce il regime giuridico delle imbarcazioni da diporto iscritte.",
+            "s\u00ec, ma subisce il regime giuridico delle imbarcazioni da diporto iscritte.",
             "no, solo quelle superiori a 10 metri di lunghezza fuori tutto.",
             "no, non pu\u00f2 essere immatricolato."
         ],
@@ -14710,7 +14710,7 @@
         "num": 1338,
         "question": "L'atto di autorizzazione alla navigazione temporanea",
         "answers": [
-            "vale come documento di bordo e abilita alla navigazione nei limiti consentiti dalle caratteristiche di costruzione dell'unit\u00e0 da diporto, nonch\u00e9 alla navigazione in acque territoriali straniere per il periodo di tempo necessario alla partecipazione a fiere,",
+            "vale come documento di bordo e abilita alla navigazione nei limiti consentiti dalle caratteristiche di costruzione dell'unit\u00e0 da diporto, nonch\u00e9 alla navigazione in acque territoriali straniere per il periodo di tempo necessario alla partecipazione a fiere, saloni e altri eventi espositivi",
             "vale come documento di bordo straordinario ed abilita alla navigazione senza alcun limite dalla costa, nonch\u00e9 in navigazione in acque internazionali.",
             "non vale come documento di bordo ed abilita esclusivamente alla navigazione da e per il cantiere di costruzione e/o manutenzione."
         ],
@@ -15148,9 +15148,9 @@
     },
     {
         "num": 1378,
-        "question": "Assumere il comando di un'unit\u00e0 senza aver conseguito la prescritta",
+        "question": "Assumere il comando di un'unit\u00e0 senza aver conseguito la prescritta abilitazione, comporta:",
         "answers": [
-            "abilitazione, comporta: la sanzione amministrativa che va da 2.755 a 11.017 euro e la sospensione della licenza di navigazione per 30 giorni.",
+            "la sanzione amministrativa che va da 2.755 a 11.017 euro e la sospensione della licenza di navigazione per 30 giorni.",
             "la sanzione amministrativa che va da 2.755 a 11.017 euro e l'arresto.",
             "la sanzione amministrativa che va da 2.755 a 11.017 euro, la sospensione della licenza di navigazione per 1 anno."
         ],
@@ -15192,9 +15192,9 @@
     },
     {
         "num": 1382,
-        "question": "La patente nautica \u00e8 obbligatoria per il comando o condotta di un'imbarcazione da diporto entro 6 miglia dalla costa, quando a bordo sia installato un motore di potenza di 29 Kw e",
+        "question": "La patente nautica \u00e8 obbligatoria per il comando o condotta di un'imbarcazione da diporto entro 6 miglia dalla costa, quando a bordo sia installato un motore di potenza di 29 Kw e cilindrata di 1.398 centimetri cubici con carburazione a 4 tempi entro bordo?",
         "answers": [
-            "cilindrata di 1.398 centimetri cubici con carburazione a 4 tempi entro bordo? s\u00ec, solo se minorenne.",
+            "s\u00ec, solo se minorenne.",
             "no, in questo caso \u00e8 richiesto solo di aver compiuto i 18 anni di et\u00e0.",
             "s\u00ec, in questo caso sussiste l'obbligo di patente nautica."
         ],
@@ -15236,9 +15236,9 @@
     },
     {
         "num": 1386,
-        "question": "Tutte le unit\u00e0 a motore hanno l\u2019obbligo di tenere a bordo la dichiarazione di",
+        "question": "Tutte le unit\u00e0 a motore hanno l\u2019obbligo di tenere a bordo la dichiarazione di potenza del motore (o il certificato d\u2019uso motore)?",
         "answers": [
-            "potenza del motore (o il certificato d\u2019uso motore)? si, tutte le unit\u00e0 da diporto a motore hanno l'obbligo a prescindere che siano o non siano iscritte nei registri navali.",
+            "si, tutte le unit\u00e0 da diporto a motore hanno l'obbligo a prescindere che siano o non siano iscritte nei registri navali.",
             "no, oltre ai natanti da diporto, hanno l'obbligo solo le imbarcazioni da diporto dotate di motore fuoribordo.",
             "no, hanno l'obbligo solo le navi da diporto."
         ],
@@ -15324,9 +15324,9 @@
     },
     {
         "num": 1394,
-        "question": "La patente nautica \u00e8 obbligatoria per il comando o condotta di un'imbarcazione da diporto entro 6 miglia dalla costa, quando",
+        "question": "La patente nautica \u00e8 obbligatoria per il comando o condotta di un'imbarcazione da diporto entro 6 miglia dalla costa, quando a bordo sia installato un motore fuoribordo di potenza di 29 Kw e cilindrata di 1.299 centimetri cubici a iniezione diretta?",
         "answers": [
-            "a bordo sia installato un motore fuoribordo di potenza di 29 Kw e cilindrata di 1.299 centimetri cubici a iniezione diretta? s\u00ec, solo se minorenne.",
+            "s\u00ec, solo se minorenne.",
             "no, in questo caso \u00e8 richiesto solo di aver compiuto i 18 anni di et\u00e0.",
             "s\u00ec, in questo caso sussiste l'obbligo di patente nautica."
         ],
@@ -15591,8 +15591,19 @@
         "question": "Avuto riguardo alla disciplina dello sci nautico, quale tra queste affermazioni \u00e8 corretta?",
         "answers": [
             "\u00e8 consentito a qualsiasi unit\u00e0 navale a motore seguire altre unit\u00e0 navali trainanti sciatori, purch\u00e8 distanti oltre i 15 metri dallo sciatore stesso.",
-            "\u00e8 vietato a qualsiasi unit\u00e0 navale a motore seguire, nella scia o a distanza inferiore a quella di sicurezza, altre unit\u00e0 navali trainanti sciatori oppure attraversarne la scia in velocit\u00e0 a vicinanza tale da poter investire gli sciatori in caso di caduta. v \u00e8 vietato a qualsiasi unit\u00e0 navale a motore superare altre unit\u00e0 navali trainanti sciatori oppure attraversarne la scia a velocit\u00e0 superiore a 15 nodi.",
-            "1419 Nelle zone di mare antistanti le spiagge, in assenza dei corridoi di lancio, la partenza o il rientro delle unit\u00e0 navali a motore addette al traino di sciatori: deve avvenire a velocit\u00e0 non superiore a cinque nodi nell'ultimo tratto dei 200 metri dalla batimetrica di metri 1,60."
+            "\u00e8 vietato a qualsiasi unit\u00e0 navale a motore seguire, nella scia o a distanza inferiore a quella di sicurezza, altre unit\u00e0 navali trainanti sciatori oppure attraversarne la scia in velocit\u00e0 a vicinanza tale da poter investire gli sciatori in caso di caduta.",
+            "\u00e8 vietato a qualsiasi unit\u00e0 navale a motore superare altre unit\u00e0 navali trainanti sciatori oppure attraversarne la scia a velocit\u00e0 superiore a 15 nodi."
+        ],
+        "right_answer": 1,
+        "image": null
+    },
+    {
+        "num": 1419,
+        "question": "Nelle zone di mare antistanti le spiagge, in assenza dei corridoi di lancio, la partenza o il rientro delle unit\u00e0 navali a motore addette al traino di sciatori:",
+        "answers": [
+            "deve avvenire a velocit\u00e0 non superiore a cinque nodi nell'ultimo tratto dei 200 metri dalla batimetrica di metri 1,60.",
+            "deve avvenire a velocit\u00e0 non superiore a sette nodi nell'ultimo tratto dei 200 metri dalla batimetrica di metri 1,60.",
+            "deve avvenire a velocit\u00e0 non superiore a tre nodi nell'ultimo tratto dei 200 metri dalla batimetrica di metri 1,60."
         ],
         "right_answer": 0,
         "image": null
@@ -15657,10 +15668,22 @@
         "question": "La distanza minima tra lo sciatore nautico e il mezzo trainante \u00e8 di:",
         "answers": [
             "18 metri.",
-            "12 metri. 14 metri.",
+            "12 metri.",
+            "14 metri.",
             "1426 L'unit\u00e0 con la quale viene praticato lo sci nautico: deve essere un'unit\u00e0 omologata CE."
         ],
         "right_answer": 0,
+        "image": null
+    },
+    {
+        "num": 1426,
+        "question": "L'unit\u00e0 con la quale viene praticato lo sci nautico:",
+        "answers": [
+            "deve essere un'unit\u00e0 omologata CE.",
+            "deve essere un'unit\u00e0 immatricolata.",
+            "puo' essere qualsiasi tipo di unit\u00e0 da diporto."
+        ],
+        "right_answer": 2,
         "image": null
     },
     {
@@ -15953,7 +15976,7 @@
         "num": 1453,
         "question": "Il pescatore sportivo giornalmente non pu\u00f2 catturare:",
         "answers": [
-            "pesci, molluschi e crostacei in quantit\u00e0 superiore a 5 kg complessivi salvo il caso di pesce singolo di peso superiore e non pu\u00f2 catturare giornalmente piu' di un",
+            "pesci, molluschi e crostacei in quantit\u00e0 superiore a 5 kg complessivi salvo il caso di pesce singolo di peso superiore e non pu\u00f2 catturare giornalmente piu' di un esemplare di cernia.",
             "pesci, molluschi e crostacei in quantit\u00e0 superiore a 8 kg complessivi salvo il caso di pesce singolo di peso superiore e non pu\u00f2 catturare giornalmente pi\u00f9 di due esemplari di cernia.",
             "molluschi e crostacei in quantit\u00e0 superiore a 10 kg."
         ],
@@ -16030,7 +16053,7 @@
         "num": 1460,
         "question": "Gli enti gestori delle Aree marine protette possono, nelle zone \"B\" (di riserva generale) o \"C\" (di riserva parziale) di una Area marina protetta, istituire:",
         "answers": [
-            "istituire, nelle zone \"B\" (di riserva generale) o \"C\" (di riserva parziale), campi boa e campi di ormeggio attrezzati, anche con l'impiego di tecnologie informatiche e",
+            "istituire, nelle zone \"B\" (di riserva generale) o \"C\" (di riserva parziale), campi boa e campi di ormeggio attrezzati, anche con l'impiego di tecnologie informatiche e telematiche.",
             "istituire, nelle zone \"A\", gare di pesca.",
             "istituire, nelle zone \"A\", gare di motonautica."
         ],

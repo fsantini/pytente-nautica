@@ -10,7 +10,7 @@ from PyQt5.QtWidgets import QApplication, QWidget, QLabel, QRadioButton, QPushBu
 from PyQt5.QtGui import QPixmap, QFont
 
 
-MAX_HISTORY = 50
+MAX_HISTORY = 20
 
 def logit(x):
     if x <= 0:
@@ -87,7 +87,7 @@ class MainWindow(QMainWindow):
         self.vela_weights = None
         self.entro_favorites = None
         self.vela_favorites = None
-        self.current_question_id = 0
+        self.current_question_index = 0
         self.current_question_set = None
         self.current_weight_set = None
         self.current_image_path = 'images_entro'
@@ -230,9 +230,25 @@ class MainWindow(QMainWindow):
         self.answer_being_shown = False
         for button in self.radio_button_list:
             button.setStyleSheet("")
+
+        # check weight length
+        if len(self.current_weight_set) < len(self.current_question_set):
+            self.current_weight_set += [0.5] * (len(self.current_question_set)-len(self.current_weight_set))
+        elif len(self.current_weight_set) > len(self.current_question_set):
+            self.current_weight_set = self.current_weight_set[:len(self.current_question_set)]
+
+        # check existance of favorites and new questions
+        self.show_onlynew()
+        self.show_favorites()
+
         self.radio_button1.setChecked(True)
         self.ok_button.setText("Ok")
-        if self.favorite_action.isChecked():
+        if self.onlynew_action.isChecked():
+            new_question_indices = [i for i in range(len(self.current_question_set)) if i not in self.current_completed_questions]
+            current_weight_set = [self.current_weight_set[i] for i in range(len(self.current_weight_set)) if i not in self.current_completed_questions]
+            current_question_id = get_random_question_id(current_weight_set)
+            question_id = new_question_indices[current_question_id]
+        elif self.favorite_action.isChecked():
             favorite_list = list(self.current_favorite_set)
             current_weight_set = [self.current_weight_set[i] for i in favorite_list]
             favorite_question_id = get_random_question_id(current_weight_set)
@@ -240,7 +256,7 @@ class MainWindow(QMainWindow):
         else:
             question_id = get_random_question_id(self.current_weight_set)
         question = self.current_question_set[question_id]
-        self.current_question_id = question_id
+        self.current_question_index = question_id
         if question_id in self.current_favorite_set:
             self.favorite_checkbox.setChecked(True)
         else:
@@ -344,23 +360,48 @@ class MainWindow(QMainWindow):
         self.favorite_action.setCheckable(True)
         self.favorite_action.setChecked(False)
         self.favorite_action.toggled.connect(self.show_favorites)
+        self.onlynew_action = QAction("Solo nuove", self)
+        self.onlynew_action.setCheckable(True)
+        self.onlynew_action.setChecked(False)
+        self.onlynew_action.toggled.connect(self.show_onlynew)
         domande_menu.addSeparator()
         domande_menu.addAction(self.favorite_action)
+        domande_menu.addAction(self.onlynew_action)
 
     @pyqtSlot()
     def show_favorites(self):
         if self.favorite_action.isChecked():
-            if not self.current_favorite_set:
+            if self.onlynew_action.isChecked():
+                self.favorite_action.setChecked(False)
+            elif not self.current_favorite_set:
                 QMessageBox.warning(self, 'Nessun preferito', 'Nessuna domanda preferita nel set corrente!')
                 self.favorite_action.setChecked(False)
+        if self.favorite_action.isChecked():
+            self.onlynew_action.setEnabled(False)
+        else:
+            self.onlynew_action.setEnabled(True)
 
+
+
+    @pyqtSlot()
+    def show_onlynew(self):
+        if self.onlynew_action.isChecked():
+            if self.favorite_action.isChecked():
+                self.onlynew_action.setChecked(False)
+            elif len(self.current_completed_questions) >= len(self.current_question_set):
+                QMessageBox.warning(self, 'Nessuna nuova domanda', 'Nessuna nuova domanda!')
+                self.onlynew_action.setChecked(False)
+        if self.onlynew_action.isChecked():
+            self.favorite_action.setEnabled(False)
+        else:
+            self.favorite_action.setEnabled(True)
 
     @pyqtSlot()
     def toggle_favorite(self):
         if self.favorite_checkbox.isChecked():
-            self.current_favorite_set.add(int(self.current_question_id))
+            self.current_favorite_set.add(int(self.current_question_index))
         else:
-            self.current_favorite_set.discard(int(self.current_question_id))
+            self.current_favorite_set.discard(int(self.current_question_index))
         self.save_favorites()
 
     @pyqtSlot()
@@ -373,6 +414,7 @@ class MainWindow(QMainWindow):
         self.current_completed_questions = self.completed_questions_vela
         self.current_image_path = 'images_vela'
         self.show_favorites()
+        self.show_onlynew()
         self.update_results()
         self.get_new_question()
 
@@ -386,6 +428,7 @@ class MainWindow(QMainWindow):
         self.current_completed_questions = self.completed_questions_entro
         self.current_image_path = 'images_entro'
         self.show_favorites()
+        self.show_onlynew()
         self.update_results()
         self.get_new_question()
 
@@ -396,23 +439,23 @@ class MainWindow(QMainWindow):
             self.get_new_question()
             return
 
-        self.current_completed_questions.add(int(self.current_question_id))
+        self.current_completed_questions.add(int(self.current_question_index))
 
         answer = [button.isChecked() for button in self.radio_button_list].index(True)
-        if answer == self.current_question_set[self.current_question_id]['right_answer']:
+        if answer == self.current_question_set[self.current_question_index]['right_answer']:
             # Correct answer
             #print('old weight', self.current_weight_set[self.current_question_id])
-            self.current_weight_set[self.current_question_id] = get_updated_weight(self.current_weight_set[self.current_question_id], -0.02)
+            self.current_weight_set[self.current_question_index] = get_updated_weight(self.current_weight_set[self.current_question_index], -0.02)
             #print('new weight', self.current_weight_set[self.current_question_id])
             self.radio_button_list[answer].setStyleSheet("border: 3px solid green;")
             self.result_history.append(1)
         else:
             # Wrong answer: make it appear more often
             #print('old weight', self.current_weight_set[self.current_question_id])
-            self.current_weight_set[self.current_question_id] = get_updated_weight(self.current_weight_set[self.current_question_id], 0.02)
+            self.current_weight_set[self.current_question_index] = get_updated_weight(self.current_weight_set[self.current_question_index], 0.02)
             #print('new weight', self.current_weight_set[self.current_question_id])
             self.radio_button_list[answer].setStyleSheet("border: 3px solid red;")
-            self.radio_button_list[self.current_question_set[self.current_question_id]['right_answer']].setStyleSheet("border: 3px solid green;")
+            self.radio_button_list[self.current_question_set[self.current_question_index]['right_answer']].setStyleSheet("border: 3px solid green;")
             self.result_history.append(0)
         self.ok_button.setText("Next")
         self.answer_being_shown = True
